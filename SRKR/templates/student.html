@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{%  for a in stu %}
+{{a}}<br>
+Roll.No : {{ a.id }}<br>
+Name: {{a.name}}<br>
+REG NO: {{a.regnumber}}<br>
+Age: {{a.age}}<br>
+Department: {{a.department}}<br>
+<hr>
+{% endfor %}
+
+
+{% endblock %}
